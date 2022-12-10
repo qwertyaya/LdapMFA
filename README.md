@@ -8,7 +8,7 @@ To use the deployment, first create the Kubernetes secrets with the `adminpasswo
 
 You can create it with the command:
 
-kubectl create secret generic openldap --from-literal=adminpassword=adminpassword --from-literal=users=ilana --from-literal=passwords=password -n yournamespace
+kubectl create secret generic openldap --from-literal=adminpassword=adminpassword --from-literal=users=user --from-literal=passwords=password -n yournamespace
 
 Once the secrets are created, you can deploy the OpenLDAP server with the following command:
 
