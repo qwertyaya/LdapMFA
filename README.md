@@ -39,7 +39,7 @@ pip install ldap3 rich telebot
 
 ## Usage
 
-To use the LDAP Login Script, run the `python3 appp.py` command and follow the prompts to enter the Telegram UID, LDAP server URL, your username, and password. The script will then send you an OTP via a Telegram bot, which you need to enter to complete the authentication process.
+To use the LDAP Login Script, run the `python3 app.py` command and follow the prompts to enter the Telegram UID, LDAP server URL, your username, and password. The script will then send you an OTP via a Telegram bot, which you need to enter to complete the authentication process.
 
 Once you're logged in, you'll get the user information that is created and stored for you in openldap. 
 
@@ -49,6 +49,7 @@ Once you're logged in, you'll get the user information that is created and store
 The LDAP Login Script uses the following environment variables:
 
 - `TG_BOT_TOKEN`: The API token of the Telegram bot that sends the OTP.
+- `TG_UID`: The user ID of Telegram account.
 
 ## Contributing
 
@@ -57,7 +58,7 @@ If you want to contribute to the LDAP Login Script, please follow these guidelin
 - Fork the repository and create a new branch for your changes.
 - Make your changes and add tests to cover them.
 - Run the tests to ensure they pass.
-- Submit a pull request to the `master` branch of the main repository.
+- Submit a pull request to the `main` branch of the main repository.
 
 ## License
 
